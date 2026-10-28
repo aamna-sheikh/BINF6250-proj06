@@ -166,8 +166,32 @@ Normalizing by the pair's average self-score corrects for sequence length (based
 
 ## Sucesses
 
+- One of our biggest successes was how we worked together to finalize the project. We all approached certain parts differently, but when we compared our code, we found that a lot of it was actually very similar. We ended up combining parts of different implementations based on what made the most sense rather than just choosing one person's work.
+- Being able to build on our Smith-Waterman code from Project 05 saved us a lot of time. We already understood the alignment process, so we could spend more time figuring out how to normalize the scores, build the distance matrix, and use it for Neighbor-Joining.
+- Our final group meeting was also really productive. We went through the different implementations, compared our trees, and talked through decisions like which distance transformation to use and how to handle negative branch lengths. We were able to explain our reasoning, question each other's choices, and agree on a final version without having to start everything over.
+
 ## Struggles
+
+- One of our biggest struggles was figuring out which formulas to use, especially for normalizing the Smith-Waterman scores and converting similarity into distance. There were different ways to approach both, and it wasn't always clear which would be most appropriate for our sequences. We spent quite a bit of time comparing the formulas and discussing how they would affect the final distance matrix and tree.
+- Neighbor-Joining was probably the most challenging part of the project. There were a lot of calculations to keep track of, and understanding how the distance matrix changes after joining two nodes took some time. We also had to figure out how to handle negative branch lengths and when to stop the algorithm, since different implementations handled these differently.
+- Finding a time when everyone could meet for long enough continues to be a challenge, especially with everyone's different schedules. I think we did a great job making it work though, whether that meant working on things individually beforehand or making the most of the time we did have together.
 
 ## Reflections 
 
+## Aamna 
+I think one of the biggest things I took away from this project was becoming more comfortable with the idea that there isn't always one correct way to approach a problem. When I was working through the functions and when we came together to compare our code, I came across various ways to do the same thing and we had made quite a few different decisions, but a lot of our implementations were actually doing the same thing. I think previously I would have been more concerned about figuring out which approach was the "right" one, or even jumped to doubt my code over anothers but this time I felt more comfortable looking at why each approach worked, deciding what made the most sense for our final code and most importantly to me confidently discuss what I wrote and why.
+
+I also felt like I understood the algorithms much better this time around. Being able to reuse Smith-Waterman from Project 05 helped because I wasn't starting completely from scratch. The Neighbor-Joining calculations still took me a while to understand, especially when it came to updating the distance matrix and calculating branch lengths, but I felt like I could actually follow what the code was doing rather than just trying to get it to run.
+
+Something I really appreciated about this project was that I had more time to play around with testing. I used the walkthrough Marcus posted throughout the project, and it was really helpful to have something I could keep referring back to as I worked through the different steps. I was able to test things as I went, compare my results, and go back to figure out why something wasn't working the way I expected. I think getting to test made a big difference in how well I understood my own code, rather than just getting it to work and moving on.
+
+I still feel like I'm slower at coding than I'd like to be, even when I understand the concepts. But I think I'm getting better at working through problems without feeling like everything needs to be perfect from the beginning. Overall, I feel more confident discussing my code with other people, questioning my decisions, and explaining why I approached something a certain way. I think that's been one of the biggest improvements for me over these last few projects.
+
 ## Appendix (AI usage, citations, etc.)
+
+Aamna:
+ChatGPT (GPT-6), 2026.
+I used ChatGPT throughout this project to help me understand the Neighbor-Joining algorithm and work through parts of my implementation. I especially needed help understanding how the corrected distance matrix was calculated, how branch lengths were determined, and how the matrix was updated after joining two nodes. I also used it to help troubleshoot parts of my code, to test whether my implementation was producing the expected results, and to
+help me with syntax and optimize commenting.
+
+I also used ChatGPT when comparing different approaches to the project, particularly recursion versus iteration, stopping at two versus three nodes, and different ways of normalizing similarity scores and converting them into distances. It helped me understand the reasoning behind these decisions so I could better explain my choices during our group discussions.
